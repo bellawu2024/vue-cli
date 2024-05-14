@@ -8,9 +8,13 @@ import i18n from './i18n'
 import { apolloProvider } from './vue-apollo'
 import ClientAddonApi from './util/ClientAddonApi'
 import gql from 'graphql-tag'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css
+
+
 
 window.gql = gql
-
+Vue.use(ElementUI);
 Vue.config.productionTip = false
 Vue.config.devtools = true
 
